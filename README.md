@@ -1,6 +1,9 @@
 # HugginFace-Community
 Se detallarán los pasos para unirse a la comunidad de Hugging Face 🤗 y las primeras acciones para aprender a navegar en la plataforma.
 
+Únete a nuestra gran Comunidad de Hugging Face donde estaremos creando, desarrollando y experimentando con modelos de Fundacionales, Machine Learning y Deep Learning!
+
+[Únete a la Comunidad 🤗💙](https://huggingface.co/BinaryBrainsAI)  
 <details>
   <summary><strong>Generación de tokens en Hugging Face 🤗</strong></summary>
 
