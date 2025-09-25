@@ -4,6 +4,9 @@ Se detallarán los pasos para unirse a la comunidad de Hugging Face 🤗 y las p
 Únete a nuestra gran Comunidad de Hugging Face donde estaremos creando, desarrollando y experimentando con modelos de Fundacionales, Machine Learning y Deep Learning!
 
 [Únete a la Comunidad 🤗💙](https://huggingface.co/BinaryBrainsAI)  
+
+<img width="800" height="320" alt="image" src="https://github.com/user-attachments/assets/e8eb2718-d8b9-4768-ba9e-6697c487d3a3" />
+
 <details>
   <summary><strong>Generación de tokens en Hugging Face 🤗</strong></summary>
 
