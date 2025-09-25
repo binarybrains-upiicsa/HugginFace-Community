@@ -8,6 +8,21 @@ Se detallarán los pasos para unirse a la comunidad de Hugging Face 🤗 y las p
 <img width="800" height="320" alt="image" src="https://github.com/user-attachments/assets/e8eb2718-d8b9-4768-ba9e-6697c487d3a3" />
 
 <details>
+  <summary><strong>Uso del Model Hub 🤗</strong></summary>
+
+  
+  Apartir de este video vas a poder entender la navegación dentro de la plataforma de Huggign Face 
+
+  **Mira el video 🤓☝️**
+  
+[![Mira el video 🤓☝️](https://img.youtube.com/vi/XvSGPZFEjDY/0.jpg)](https://www.youtube.com/watch?v=XvSGPZFEjDY)
+
+[Mira la documentación 🤓☝️](https://huggingface.co/docs/hub/index)  
+
+</details>
+
+
+<details>
   <summary><strong>Generación de tokens en Hugging Face 🤗</strong></summary>
 
   Con la ayuda de un feature llamado **Serverless API**, nos permitirá usar modelos directamente desde la nube de Hugging Face 🤗 solo con tu token, sin necesidad de instalar librerías, descargar pesos o desplegar entornos.  
@@ -22,7 +37,7 @@ Se detallarán los pasos para unirse a la comunidad de Hugging Face 🤗 y las p
 ![478645250-5b62c83b-b616-442b-ae8f-420a3dc1e311](https://github.com/user-attachments/assets/32036ef0-537f-4ed8-b785-5f2c72d471bd)
 
 </details>
-
+  
 <details>
   <summary><strong>Uso de LLM's en Hugging Face 🤗</strong></summary>
   Haremos uso de nuestro token generado en HF 🤗 para poder hacer uso de los modelos que se encuentran aquí.
