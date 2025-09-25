@@ -35,6 +35,7 @@ hf auth login
 
 ![Untitled](https://github.com/user-attachments/assets/77e601fe-ec66-4471-907f-0fc628776fa2)
 
+### Python
 
    ```python
 import os
@@ -77,8 +78,39 @@ print(resp.choices[0].message["content"])
 
 ```
 
+### JavaScript
+
+```shell
+npm install @huggingface/inference
+```
+
+
+```shell
+import { InferenceClient } from "@huggingface/inference";
+
+const client = new InferenceClient(process.env.HF_TOKEN);
+
+const chatCompletion = await client.chatCompletion({
+  model: "deepseek-ai/DeepSeek-V3-0324",
+  messages: [
+    {
+      role: "user",
+      content: "How many 'G's in 'huggingface'?",
+    },
+  ],
+});
+
+console.log(chatCompletion.choices[0].message);
+```
+
+
 Podrás seleccionar distintos tipos de modelos los cuales podrás encontrarlos en el Hub de Hugging Face [Hugging Face Models](https://huggingface.co/models)  🤗
 
 <img width="1905" height="926" alt="image" src="https://github.com/user-attachments/assets/66fb3791-08b8-4cfc-9c17-aa1c0b25e5ad" />
+
+Así mismo vas a poder encontrar modelos que se puedan ajustar mejor a cada tipo de tarea que tu necesites
+
+<img width="465" height="303" alt="image" src="https://github.com/user-attachments/assets/d535c7b6-38bf-49cb-9c54-47e3b23c136d" />
+
 
 </details>
