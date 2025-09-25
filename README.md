@@ -53,6 +53,28 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message)
+
+```
+
+Aquí esta otra forma en la cual agregamos el TOKEN  en forma de variable en nuestro código:
+
+   ```python
+import os
+from huggingface_hub import InferenceClient
+
+os.environ["HF_TOKEN"] = "TU_TOKEN_AQUI"
+
+client = InferenceClient("google/gemma-2-2b-it", token=os.environ["HF_TOKEN"])
+
+resp = client.chat_completion(
+    messages=[{"role": "user",
+               "content": "Escribe un poema sobre un gato y un perro que son amigos"}],
+    max_tokens=120,
+    temperature=0.7,
+)
+
+print(resp.choices[0].message["content"])
+
 ```
 
 Podrás seleccionar distintos tipos de modelos los cuales podrás encontrarlos en el Hub de Hugging Face [Hugging Face Models](https://huggingface.co/models)  🤗
