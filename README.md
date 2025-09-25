@@ -19,3 +19,44 @@ Se detallarán los pasos para unirse a la comunidad de Hugging Face 🤗 y las p
 ![478645250-5b62c83b-b616-442b-ae8f-420a3dc1e311](https://github.com/user-attachments/assets/32036ef0-537f-4ed8-b785-5f2c72d471bd)
 
 </details>
+
+<details>
+  <summary><strong>Uso de LLM's en Hugging Face 🤗</strong></summary>
+  Haremos uso de nuestro token generado en HF 🤗 para poder hacer uso de los modelos que se encuentran aquí.
+
+  En tu terminal, instala el Hugging Face Hub Python client y haz log in:
+
+```shell
+pip install huggingface_hub
+hf auth login
+```
+
+   Una vez ejecutes el  *hf auth login*   tendrás que pegar tu TOKEN generado anteriormente para logearte y poder hacer uso de el en tu código :
+
+![Untitled](https://github.com/user-attachments/assets/77e601fe-ec66-4471-907f-0fc628776fa2)
+
+
+   ```python
+import os
+from huggingface_hub import InferenceClient
+
+client = InferenceClient()
+
+completion = client.chat.completions.create(
+    model="openai/gpt-oss-120b",
+    messages=[
+        {
+            "role": "user",
+            "content": "How many 'G's in 'huggingface'?"
+        }
+    ],
+)
+
+print(completion.choices[0].message)
+```
+
+Podrás seleccionar distintos tipos de modelos los cuales podrás encontrarlos en el Hub de Hugging Face [Hugging Face Models](https://huggingface.co/models)  🤗
+
+<img width="1905" height="926" alt="image" src="https://github.com/user-attachments/assets/66fb3791-08b8-4cfc-9c17-aa1c0b25e5ad" />
+
+</details>
